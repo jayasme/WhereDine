@@ -13,6 +13,7 @@
 		1D43FCE81F2897CA00607C41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D43FCE71F2897CA00607C41 /* Assets.xcassets */; };
 		1D43FCEB1F2897CA00607C41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D43FCE91F2897CA00607C41 /* LaunchScreen.storyboard */; };
 		1D4A03EA1F28B97C00E7127D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1D4A03E91F28B97C00E7127D /* README.md */; };
+		1D4A03ED1F28BBDD00E7127D /* Destiny.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1D4A03EC1F28BBDD00E7127D /* Destiny.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1D43FCEA1F2897CA00607C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D43FCEC1F2897CA00607C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D4A03E91F28B97C00E7127D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1D4A03EC1F28BBDD00E7127D /* Destiny.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Destiny.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				1D4A03E91F28B97C00E7127D /* README.md */,
+				1D4A03EB1F28BBBA00E7127D /* Docs */,
 				1D43FCDF1F2897CA00607C41 /* WhereDine */,
 				1D43FCDE1F2897CA00607C41 /* Products */,
 			);
@@ -65,6 +68,14 @@
 				1D43FCEC1F2897CA00607C41 /* Info.plist */,
 			);
 			path = WhereDine;
+			sourceTree = "<group>";
+		};
+		1D4A03EB1F28BBBA00E7127D /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				1D4A03EC1F28BBDD00E7127D /* Destiny.PNG */,
+			);
+			path = Docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +140,7 @@
 			files = (
 				1D43FCEB1F2897CA00607C41 /* LaunchScreen.storyboard in Resources */,
 				1D43FCE81F2897CA00607C41 /* Assets.xcassets in Resources */,
+				1D4A03ED1F28BBDD00E7127D /* Destiny.PNG in Resources */,
 				1D43FCE61F2897CA00607C41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
