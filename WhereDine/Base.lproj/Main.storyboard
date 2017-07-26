@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhereDine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KP3-W1-UfT">
+                                <rect key="frame" x="137" y="487" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.3915781469324997" green="0.78280437271608394" blue="0.89727848768234253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="FPO-BR-K4i"/>
+                                    <constraint firstAttribute="height" constant="100" id="NFk-cO-ufc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="手气不错">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnRollTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DIO-tp-CWI"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klh-5X-V3m">
+                                <rect key="frame" x="87" y="133.5" width="200" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2H-ia-1td">
+                                        <rect key="frame" x="0.0" y="67" width="66" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="Pp0-cF-Tsl"/>
+                                            <constraint firstAttribute="width" constant="66" id="umj-Ko-zM8"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="left_arrow"/>
+                                        <state key="selected" image="left_arrow_selected"/>
+                                        <connections>
+                                            <action selector="didTapLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cl3-sJ-dew"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSa-wA-ZmB">
+                                        <rect key="frame" x="67" y="0.0" width="66" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="nhS-fE-M2K"/>
+                                            <constraint firstAttribute="width" constant="66" id="oG8-ag-UVD"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="up_arrow"/>
+                                        <state key="selected" image="up_arrow_selected"/>
+                                        <connections>
+                                            <action selector="didTapUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pTz-Tf-UTv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqm-dF-EYm">
+                                        <rect key="frame" x="134" y="66.5" width="66" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="PJ0-z9-VBk"/>
+                                            <constraint firstAttribute="width" constant="66" id="YEK-C6-Sny"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="right_arrow"/>
+                                        <state key="selected" image="right_arrow_selected"/>
+                                        <connections>
+                                            <action selector="didTapRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yq7-1L-q5r"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAu-d6-h44">
+                                        <rect key="frame" x="67" y="134" width="66" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="Qd8-hx-VGt"/>
+                                            <constraint firstAttribute="width" constant="66" id="RzO-m6-Y0f"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="down_arrow"/>
+                                        <state key="selected" image="down_arrow_selected"/>
+                                        <connections>
+                                            <action selector="didTapDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6En-oS-YUo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="iSa-wA-ZmB" firstAttribute="centerX" secondItem="klh-5X-V3m" secondAttribute="centerX" id="4bF-eA-X4i"/>
+                                    <constraint firstAttribute="height" constant="200" id="559-7k-hJr"/>
+                                    <constraint firstItem="Nqm-dF-EYm" firstAttribute="centerY" secondItem="klh-5X-V3m" secondAttribute="centerY" id="6eX-dB-lgt"/>
+                                    <constraint firstAttribute="width" constant="200" id="AGC-Cb-ZE7"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nqm-dF-EYm" secondAttribute="trailing" id="TG8-bW-1Qp"/>
+                                    <constraint firstItem="I2H-ia-1td" firstAttribute="centerY" secondItem="klh-5X-V3m" secondAttribute="centerY" id="ZKc-2t-9EA"/>
+                                    <constraint firstAttribute="bottom" secondItem="dAu-d6-h44" secondAttribute="bottom" id="b5E-d5-dAH"/>
+                                    <constraint firstItem="I2H-ia-1td" firstAttribute="leading" secondItem="klh-5X-V3m" secondAttribute="leading" id="dlB-Tr-rUw"/>
+                                    <constraint firstItem="dAu-d6-h44" firstAttribute="centerX" secondItem="klh-5X-V3m" secondAttribute="centerX" id="edN-ok-Kol"/>
+                                    <constraint firstItem="iSa-wA-ZmB" firstAttribute="top" secondItem="klh-5X-V3m" secondAttribute="top" id="iQu-cP-7gy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KP3-W1-UfT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0A7-bi-zVw"/>
+                            <constraint firstItem="klh-5X-V3m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="46w-NK-LIr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KP3-W1-UfT" secondAttribute="bottom" constant="80" id="Jho-42-bfv"/>
+                            <constraint firstItem="klh-5X-V3m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="ZU5-61-sjR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnRoll" destination="KP3-W1-UfT" id="gT2-XX-u2G"/>
+                        <outlet property="downArrow" destination="dAu-d6-h44" id="wgD-2U-8VL"/>
+                        <outlet property="leftArrow" destination="I2H-ia-1td" id="OAf-hn-wni"/>
+                        <outlet property="rightArrow" destination="Nqm-dF-EYm" id="RZh-An-SaX"/>
+                        <outlet property="upArrow" destination="iSa-wA-ZmB" id="P9e-7I-JMw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="down_arrow" width="66" height="66"/>
+        <image name="down_arrow_selected" width="66" height="66"/>
+        <image name="left_arrow" width="66" height="66"/>
+        <image name="left_arrow_selected" width="66" height="66"/>
+        <image name="right_arrow" width="66" height="66"/>
+        <image name="right_arrow_selected" width="66" height="66"/>
+        <image name="up_arrow" width="66" height="66"/>
+        <image name="up_arrow_selected" width="66" height="66"/>
+    </resources>
+</document>
